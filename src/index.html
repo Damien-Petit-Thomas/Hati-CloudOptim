@@ -3,50 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/base/reset.css">
+    <link rel="stylesheet" href="./scss/base/reset.scss">
     <link rel="stylesheet" href="./scss/app.scss">
     <title>Daschboard CoudOptim</title>
 </head>
 <body>
         <header>
-            <img src="./logo-oclock.png" alt="logo CLoudOptim"  id="logo">
-
-            <h1>CloudOptim</h1>
+           
+                <h1>CloudOptim</h1>
+            
+                
+                
+            
         </header>
-        <main>
-            <section class="server-list">
+        <main class="video-container">
+            <video src="./pink-smoke.mp4" autoplay muted loop type="video/mp4">
+                votre navigateur ne supporte pas les vidéos
+            </video>
+            <section class="server-list text-box">
                 <h2>Liste des servers</h2>
-                <ul>
-                    <li>
-                        <h3>server 1</h3>
-                        <p>Statut: En ligne</p>
-                        <p>CPU utilisé : 30%</p>
-                        <p>Mémoire utilisée : 50%</p>
-                    </li>
-                    <li>
-                        <h3>Nom du server 2</h3>
-                        <p>Statut: En ligne</p>
-                        <p>CPU utilisé : 30%</p>
-                        <p>Mémoire utilisée : 50%</p>
-                    </li>
-                    <li>
-                        <h3>Nom du server 3</h3>
-                        <p>Statut: En ligne</p>
-                        <p>CPU utilisé : 30%</p>
-                        <p>Mémoire utilisée : 50%</p>
-                    </li>
-                    <li>
-                        <h3>Nom du server 4</h3>
-                        <p>Statut: En ligne</p>
-                        <p>CPU utilisé : 30%</p>
-                        <p>Mémoire utilisée : 50%</p>
-                    </li>
-                    <li>
-                        <h3>Nom du server 5</h3>
-                        <p>Statut: En ligne</p>
-                        <p>CPU utilisé : 30%</p>
-                        <p>Mémoire utilisée : 50%</p>
-                </ul>
+                <ul class="list-container">
+                        <li data-name="1">
+                            <input type="button" value="favoris +" class="btn" data-name="1">
+                            <h3>server 1</h3>
+                            <p>Statut: En ligne</p>
+                            <p>CPU utilisé : 30%</p>
+                            <p>Mémoire utilisée : 50%</p>
+                        </li>
+                        <li data-name="2">
+                            <input type="button" value="favoris +" class="btn" data-name="2">
+
+
+                            <h3>Nom du server 2</h3>
+                            <p>Statut: En ligne</p>
+                            <p>CPU utilisé : 30%</p>
+                            <p>Mémoire utilisée : 50%</p>
+                        </li>
+                        <li data-name="3">
+                            <input type="button" value="favoris +" class="btn" data-name="3">
+                            <h3>Nom du server 3</h3>
+                            <p>Statut: En ligne</p>
+                            <p>CPU utilisé : 30%</p>
+                            <p>Mémoire utilisée : 50%</p>
+                        </li>
+                        <li data-name="4">
+                            <input type="button" value="favoris +" class="btn" data-name="4">
+                            <h3>Nom du server 4</h3>
+                            <p>Statut: En ligne</p>
+                            <p>CPU utilisé : 30%</p>
+                            <p>Mémoire utilisée : 50%</p>
+                        </li>
+                        <li data-name = "5">
+                            <input type="button" value="favoris +" class="btn" data-name="5">
+                            <h3>Nom du server 5</h3>
+                            <p>Statut: En ligne</p>
+                            <p>CPU utilisé : 30%</p>
+                            <p>Mémoire utilisée : 50%</p>
+                     
+                    </ul>
             </section>
         </main>
 <footer>
@@ -57,5 +71,6 @@
 </footer>
 
 
+<script src="./js/app.js"></script>
 </body>
 </html>
