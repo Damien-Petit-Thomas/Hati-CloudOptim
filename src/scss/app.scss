@@ -1,1 +1,52 @@
 @import 'base/reset.scss';
+:root {
+  --primary-color: #137C8B --primary-color-light: #1BA0B3 --primary-color-dark: #0D5B66 --secondary-color: #F2F2F2 --secondary-color-light: #FFFFFF --secondary-color-dark: #C4C4C4 --tertiary-color: #F2F2F2 --tertiary-color-light: #FFFFFF --background-color: #B8CBD0
+}
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  position: absolute;
+  left: 5%;
+  transform: translateX(-95%);
+  width: 50px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
